@@ -1,0 +1,5 @@
+<map id="idocp::TimeVaryingCoMRefBase" name="idocp::TimeVaryingCoMRefBase">
+<area shape="rect" id="node1" title="Base class of time&#45;varying reference of position of the center of mass." alt="" coords="69,5,277,32"/>
+<area shape="rect" id="node2" href="$classidocp_1_1_periodic_co_m_ref.html" title="Periodic reference of the center of mass." alt="" coords="5,80,159,107"/>
+<area shape="rect" id="node3" href="$classidocp_1_1_periodic_co_m_ref2.html" title="Periodic reference of the center of mass." alt="" coords="183,80,343,107"/>
+</map>

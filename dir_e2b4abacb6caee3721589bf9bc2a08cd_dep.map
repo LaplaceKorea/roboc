@@ -1,0 +1,17 @@
+<map id="/github/workspace/include/idocp/mpc" name="/github/workspace/include/idocp/mpc">
+<area shape="rect" id="node1" href="dir_08b8e71fa344601ec16a6968d8787849.html" title="cost" alt="" coords="27,244,99,292"/>
+<area shape="rect" id="node4" href="dir_87d68de5e5e5a50f38ed3a99c1cfd3fc.html" title="robot" alt="" coords="123,340,195,388"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000003_000011.html" title="18" alt="" coords="121,314,135,328"/>
+<area shape="rect" id="node2" href="dir_6207f3cc8c074caf1f565c4c234ca3af.html" title="constraints" alt="" coords="150,244,237,292"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000002_000011.html" title="14" alt="" coords="174,318,189,333"/>
+<area shape="rect" id="node3" href="dir_6d74f769e7fc2c3fc93ae1befab0f5f7.html" title="solver" alt="" coords="93,148,165,196"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000012_000003.html" title="3" alt="" coords="92,227,100,241"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000012_000002.html" title="3" alt="" coords="170,217,178,231"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000012_000011.html" title="3" alt="" coords="150,312,158,327"/>
+<area shape="rect" id="node5" href="dir_e2b4abacb6caee3721589bf9bc2a08cd.html" title="mpc" alt="" coords="124,52,196,100"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000007_000003.html" title="2" alt="" coords="67,219,75,233"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000007_000002.html" title="2" alt="" coords="193,218,201,232"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000007_000012.html" title="2" alt="" coords="147,126,155,141"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000007_000011.html" title="2" alt="" coords="211,335,219,350"/>
+<area shape="rect" id="clust1" href="dir_790dd8b6ccb187926e0194509bcb2ba2.html" title="idocp" alt="" coords="16,16,275,399"/>
+</map>

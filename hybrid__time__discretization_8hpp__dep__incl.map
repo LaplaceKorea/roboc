@@ -1,0 +1,17 @@
+<map id="/github/workspace/include/idocp/hybrid/hybrid_time_discretization.hpp" name="/github/workspace/include/idocp/hybrid/hybrid_time_discretization.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="67,5,240,61"/>
+<area shape="rect" id="node2" href="$hybrid__time__discretization_8hxx.html" title=" " alt="" coords="5,109,179,165"/>
+<area shape="rect" id="node3" href="$direct__multiple__shooting_8hpp.html" title=" " alt="" coords="97,213,271,269"/>
+<area shape="rect" id="node10" href="$ocp_8hpp.html" title=" " alt="" coords="284,117,457,158"/>
+<area shape="rect" id="node4" href="$direct__multiple__shooting_8hxx.html" title=" " alt="" coords="97,317,271,373"/>
+<area shape="rect" id="node5" href="$ocp__solver_8hpp.html" title=" " alt="" coords="336,325,523,366"/>
+<area shape="rect" id="node6" href="$mpc__quadrupedal__trotting_8hpp.html" title=" " alt="" coords="117,421,309,477"/>
+<area shape="rect" id="node7" href="$mpc__quadrupedal__walking_8hpp.html" title=" " alt="" coords="333,421,525,477"/>
+<area shape="rect" id="node8" href="$logger_8hpp.html" title=" " alt="" coords="549,429,723,470"/>
+<area shape="rect" id="node9" href="$ocp__benchmarker_8hpp.html" title=" " alt="" coords="528,525,744,567"/>
+<area shape="rect" id="node11" href="$line__search_8hpp.html" title=" " alt="" coords="345,213,519,269"/>
+<area shape="rect" id="node12" href="$unconstr__line__search_8hpp.html" title=" " alt="" coords="740,213,921,269"/>
+<area shape="rect" id="node15" href="$riccati__recursion_8hpp.html" title=" " alt="" coords="543,213,716,269"/>
+<area shape="rect" id="node13" href="$unconstr__ocp__solver_8hpp.html" title=" " alt="" coords="548,317,721,373"/>
+<area shape="rect" id="node14" href="$unconstr__parnmpc__solver_8hpp.html" title=" " alt="" coords="745,317,919,373"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="idocp::ConstraintComponentBase" name="idocp::ConstraintComponentBase">
+<area shape="rect" id="node1" title="Base class for constraint components." alt="" coords="5,260,220,287"/>
+<area shape="rect" id="node2" href="$classidocp_1_1_friction_cone.html" title="Constraint on the inner&#45;approximated firction cone." alt="" coords="287,5,419,32"/>
+<area shape="rect" id="node3" href="$classidocp_1_1_joint_acceleration_lower_limit.html" title="Constraint on the lower limits of the joint acceleration." alt="" coords="274,57,433,98"/>
+<area shape="rect" id="node4" href="$classidocp_1_1_joint_acceleration_upper_limit.html" title="Constraint on the upper limits of the joint acceleration." alt="" coords="274,122,433,163"/>
+<area shape="rect" id="node5" href="$classidocp_1_1_joint_position_lower_limit.html" title="Constraint on the lower limits of the joint position." alt="" coords="268,187,439,229"/>
+<area shape="rect" id="node6" href="$classidocp_1_1_joint_position_upper_limit.html" title="Constraint on the upper limits of the joint position." alt="" coords="269,253,438,294"/>
+<area shape="rect" id="node7" href="$classidocp_1_1_joint_torques_lower_limit.html" title="Constraint on the lower limits of the joint torques." alt="" coords="268,318,439,359"/>
+<area shape="rect" id="node8" href="$classidocp_1_1_joint_torques_upper_limit.html" title="Constraint on the upper limits of the joint torques." alt="" coords="269,383,438,425"/>
+<area shape="rect" id="node9" href="$classidocp_1_1_joint_velocity_lower_limit.html" title="Constraint on the lower limits of the joint velocity." alt="" coords="269,449,438,490"/>
+<area shape="rect" id="node10" href="$classidocp_1_1_joint_velocity_upper_limit.html" title="Constraint on the upper limits of the joint velocity." alt="" coords="269,514,437,555"/>
+</map>

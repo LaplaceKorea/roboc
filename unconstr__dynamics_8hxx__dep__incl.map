@@ -1,0 +1,18 @@
+<map id="/github/workspace/include/idocp/unconstr/unconstr_dynamics.hxx" name="/github/workspace/include/idocp/unconstr/unconstr_dynamics.hxx">
+<area shape="rect" id="node1" title=" " alt="" coords="435,5,609,61"/>
+<area shape="rect" id="node2" href="$unconstr__dynamics_8hpp.html" title=" " alt="" coords="435,109,609,165"/>
+<area shape="rect" id="node3" href="$split__unconstr__ocp_8hpp.html" title=" " alt="" coords="105,213,301,269"/>
+<area shape="rect" id="node11" href="$split__unconstr__parnmpc_8hpp.html" title=" " alt="" coords="424,213,620,269"/>
+<area shape="rect" id="node15" href="$terminal__unconstr__parnmpc_8hpp.html" title=" " alt="" coords="743,213,917,269"/>
+<area shape="rect" id="node4" href="$split__unconstr__ocp_8hxx.html" title=" " alt="" coords="5,317,201,373"/>
+<area shape="rect" id="node5" href="$unconstr__ocp_8hpp.html" title=" " alt="" coords="226,317,399,373"/>
+<area shape="rect" id="node6" href="$unconstr__line__search_8hpp.html" title=" " alt="" coords="379,421,561,477"/>
+<area shape="rect" id="node7" href="$unconstr__ocp__solver_8hpp.html" title=" " alt="" coords="323,525,497,581"/>
+<area shape="rect" id="node10" href="$unconstr__parnmpc__solver_8hpp.html" title=" " alt="" coords="521,525,694,581"/>
+<area shape="rect" id="node8" href="$logger_8hpp.html" title=" " alt="" coords="422,629,595,671"/>
+<area shape="rect" id="node9" href="$ocp__benchmarker_8hpp.html" title=" " alt="" coords="401,719,617,760"/>
+<area shape="rect" id="node12" href="$split__unconstr__parnmpc_8hxx.html" title=" " alt="" coords="424,317,620,373"/>
+<area shape="rect" id="node13" href="$unconstr__parnmpc_8hpp.html" title=" " alt="" coords="645,317,818,373"/>
+<area shape="rect" id="node14" href="$unconstr__backward__correction_8hpp.html" title=" " alt="" coords="645,421,818,477"/>
+<area shape="rect" id="node16" href="$terminal__unconstr__parnmpc_8hxx.html" title=" " alt="" coords="842,317,1015,373"/>
+</map>

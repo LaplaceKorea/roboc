@@ -1,0 +1,5 @@
+<map id="idocp::TimeVaryingTaskSpace3DRefBase" name="idocp::TimeVaryingTaskSpace3DRefBase">
+<area shape="rect" id="node1" title="Base class of time&#45;varying reference of task space position." alt="" coords="103,5,307,47"/>
+<area shape="rect" id="node2" href="$classidocp_1_1_periodic_foot_track_ref.html" title="Periodic reference of the foot position." alt="" coords="5,95,191,121"/>
+<area shape="rect" id="node3" href="$classidocp_1_1_periodic_foot_track_ref2.html" title="Periodic reference of the foot position." alt="" coords="215,95,407,121"/>
+</map>
