@@ -2,17 +2,17 @@
 
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/unconstr/unconstr_dynamics.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/unconstr/unconstr_dynamics.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class UnconstrDynamicsTest : public ::testing::Test {
 protected:
@@ -108,7 +108,7 @@ TEST_F(UnconstrDynamicsTest, condenseUnconstrDynamics) {
   EXPECT_TRUE(d_ref.isApprox(d));
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

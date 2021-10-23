@@ -3,22 +3,22 @@
 
 #include "Eigen/Core"
 
-#include "idocp/solver/unconstr_ocp_solver.hpp"
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/se3.hpp"
-#include "idocp/cost/cost_function.hpp"
-#include "idocp/cost/configuration_space_cost.hpp"
-#include "idocp/cost/time_varying_task_space_6d_cost.hpp"
-#include "idocp/constraints/constraints.hpp"
-#include "idocp/utils/joint_constraints_factory.hpp"
-#include "idocp/utils/ocp_benchmarker.hpp"
+#include "roboc/solver/unconstr_ocp_solver.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/se3.hpp"
+#include "roboc/cost/cost_function.hpp"
+#include "roboc/cost/configuration_space_cost.hpp"
+#include "roboc/cost/time_varying_task_space_6d_cost.hpp"
+#include "roboc/constraints/constraints.hpp"
+#include "roboc/utils/joint_constraints_factory.hpp"
+#include "roboc/utils/ocp_benchmarker.hpp"
 
 #ifdef ENABLE_VIEWER
-#include "idocp/utils/trajectory_viewer.hpp"
+#include "roboc/utils/trajectory_viewer.hpp"
 #endif 
 
 
-class TimeVaryingTaskSpace6DRef final : public idocp::TimeVaryingTaskSpace6DRefBase {
+class TimeVaryingTaskSpace6DRef final : public roboc::TimeVaryingTaskSpace6DRefBase {
 public:
   TimeVaryingTaskSpace6DRef() 
     : TimeVaryingTaskSpace6DRefBase() {
@@ -52,15 +52,15 @@ private:
 int main(int argc, char *argv[]) {
   // Create a robot.
   const std::string path_to_urdf = "../iiwa_description/urdf/iiwa14.urdf";
-  idocp::Robot robot(path_to_urdf);
+  roboc::Robot robot(path_to_urdf);
 
   // Change the limits from the default parameters.
   robot.setJointEffortLimit(Eigen::VectorXd::Constant(robot.dimu(), 50));
   robot.setJointVelocityLimit(Eigen::VectorXd::Constant(robot.dimv(), M_PI_2));
 
   // Create a cost function.
-  auto cost = std::make_shared<idocp::CostFunction>();
-  auto config_cost = std::make_shared<idocp::ConfigurationSpaceCost>(robot);
+  auto cost = std::make_shared<roboc::CostFunction>();
+  auto config_cost = std::make_shared<roboc::ConfigurationSpaceCost>(robot);
   config_cost->set_q_weight(Eigen::VectorXd::Constant(robot.dimv(), 0.1));
   config_cost->set_qf_weight(Eigen::VectorXd::Constant(robot.dimv(), 0.1));
   config_cost->set_v_weight(Eigen::VectorXd::Constant(robot.dimv(), 0.0001));
@@ -69,13 +69,13 @@ int main(int argc, char *argv[]) {
   cost->push_back(config_cost);
   const int ee_frame_id = 22; 
   auto ref = std::make_shared<TimeVaryingTaskSpace6DRef>();
-  auto task_cost = std::make_shared<idocp::TimeVaryingTaskSpace6DCost>(robot, ee_frame_id, ref);
+  auto task_cost = std::make_shared<roboc::TimeVaryingTaskSpace6DCost>(robot, ee_frame_id, ref);
   task_cost->set_q_weight(Eigen::Vector3d::Constant(1000), Eigen::Vector3d::Constant(1000));
   task_cost->set_qf_weight(Eigen::Vector3d::Constant(1000), Eigen::Vector3d::Constant(1000));
   cost->push_back(task_cost);
 
   // Create joint constraints.
-  idocp::JointConstraintsFactory constraints_factory(robot);
+  roboc::JointConstraintsFactory constraints_factory(robot);
   auto constraints = constraints_factory.create();
 
   // Create the OCP solver for unconstrained rigid-body systems.
@@ -86,17 +86,17 @@ int main(int argc, char *argv[]) {
   Eigen::VectorXd q = Eigen::VectorXd::Zero(robot.dimq());
   q << 0, M_PI_2, 0, M_PI_2, 0, M_PI_2, 0;
   const Eigen::VectorXd v = Eigen::VectorXd::Zero(robot.dimv());
-  idocp::UnconstrOCPSolver ocp_solver(robot, cost, constraints, T, N, nthreads);
+  roboc::UnconstrOCPSolver ocp_solver(robot, cost, constraints, T, N, nthreads);
 
   // Solves the OCP.
   ocp_solver.setSolution("q", q);
   ocp_solver.setSolution("v", v);
   const int num_iteration = 30;
   const bool line_search = false;
-  idocp::benchmark::convergence(ocp_solver, t, q, v, num_iteration, line_search);
+  roboc::benchmark::convergence(ocp_solver, t, q, v, num_iteration, line_search);
 
 #ifdef ENABLE_VIEWER
-  idocp::TrajectoryViewer viewer(path_to_urdf);
+  roboc::TrajectoryViewer viewer(path_to_urdf);
   const double dt = T/N;
   viewer.display(ocp_solver.getSolution("q"), dt);
 #endif 

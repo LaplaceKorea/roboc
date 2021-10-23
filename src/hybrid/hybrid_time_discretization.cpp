@@ -1,7 +1,7 @@
-#include "idocp/hybrid/hybrid_ocp_discretization.hpp"
+#include "roboc/hybrid/hybrid_ocp_discretization.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 void HybridOCPDiscretization::disp(std::ostream& os) const {
   os << "The discretized optimal control problem (OCP):" << std::endl;
@@ -42,4 +42,4 @@ std::ostream& operator<<(std::ostream& os,
   return os;
 }
 
-} // namespace idocp 
+} // namespace roboc 

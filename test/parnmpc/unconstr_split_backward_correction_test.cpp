@@ -3,18 +3,18 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/parnmpc/unconstr_kkt_matrix_inverter.hpp"
-#include "idocp/parnmpc/unconstr_split_backward_correction.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/parnmpc/unconstr_kkt_matrix_inverter.hpp"
+#include "roboc/parnmpc/unconstr_split_backward_correction.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class UnconstrSplitBackwardCorrectionTest : public ::testing::Test {
 protected:
@@ -154,7 +154,7 @@ TEST_F(UnconstrSplitBackwardCorrectionTest, testTerminal) {
   EXPECT_TRUE(corr.auxMat().isApprox(KKT_mat_inv.topLeftCorner(dimx, dimx)));
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -3,18 +3,18 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/constraints/pdipm.hpp"
-#include "idocp/constraints/friction_cone.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/constraints/pdipm.hpp"
+#include "roboc/constraints/friction_cone.hpp"
 
 #include "robot_factory.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class FrictionConeTest : public ::testing::Test {
 protected:
@@ -363,7 +363,7 @@ TEST_F(FrictionConeTest, floatingBase) {
   testExpandSlackAndDual(robot, contact_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -1,11 +1,11 @@
-#include "idocp/line_search/line_search.hpp"
+#include "roboc/line_search/line_search.hpp"
 
 #include <stdexcept>
 #include <iostream>
 #include <cassert>
 
 
-namespace idocp {
+namespace roboc {
 
 LineSearch::LineSearch(const Robot& robot, const int N, 
                        const int max_num_impulse, const int nthreads, 
@@ -258,4 +258,4 @@ void LineSearch::computeSolutionTrial(const OCP& ocp,
   }
 }
 
-} // namespace idocp
+} // namespace roboc

@@ -1,7 +1,7 @@
-#include "idocp/ocp/kkt_matrix.hpp"
+#include "roboc/ocp/kkt_matrix.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 std::ostream& operator<<(std::ostream& os, const KKTMatrix& kkt_matrix) {
   os << "KKT matrix:" << std::endl;
@@ -9,4 +9,4 @@ std::ostream& operator<<(std::ostream& os, const KKTMatrix& kkt_matrix) {
   return os;
 }
 
-} // namespace idocp 
+} // namespace roboc 

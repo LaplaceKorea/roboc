@@ -3,20 +3,20 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/se3.hpp"
-#include "idocp/cost/time_varying_task_space_6d_cost.hpp"
-#include "idocp/cost/cost_function_data.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/se3.hpp"
+#include "roboc/cost/time_varying_task_space_6d_cost.hpp"
+#include "roboc/cost/cost_function_data.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
 
-#include "idocp/utils/derivative_checker.hpp"
+#include "roboc/utils/derivative_checker.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class TimeVaryingTaskSpace6DRef final : public TimeVaryingTaskSpace6DRefBase {
 public:
@@ -275,7 +275,7 @@ TEST_F(TimeVaryingTaskSpace6DCostTest, floatingBase) {
   }
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -1,7 +1,7 @@
-#include "idocp/constraints/joint_acceleration_lower_limit.hpp"
+#include "roboc/constraints/joint_acceleration_lower_limit.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 JointAccelerationLowerLimit::JointAccelerationLowerLimit(
     const Robot& robot, const Eigen::VectorXd& amin, const double barrier, 
@@ -91,4 +91,4 @@ int JointAccelerationLowerLimit::dimc() const {
   return dimc_;
 }
 
-} // namespace idocp
+} // namespace roboc

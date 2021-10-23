@@ -3,27 +3,27 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/ocp/split_ocp.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/state_equation.hpp"
-#include "idocp/ocp/contact_dynamics.hpp"
-#include "idocp/ocp/split_switching_constraint_residual.hpp"
-#include "idocp/ocp/split_switching_constraint_jacobian.hpp"
-#include "idocp/ocp/switching_constraint.hpp"
-#include "idocp/cost/cost_function.hpp"
-#include "idocp/constraints/constraints.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/ocp/split_ocp.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/state_equation.hpp"
+#include "roboc/ocp/contact_dynamics.hpp"
+#include "roboc/ocp/split_switching_constraint_residual.hpp"
+#include "roboc/ocp/split_switching_constraint_jacobian.hpp"
+#include "roboc/ocp/switching_constraint.hpp"
+#include "roboc/cost/cost_function.hpp"
+#include "roboc/constraints/constraints.hpp"
 
 #include "robot_factory.hpp"
 #include "cost_factory.hpp"
 #include "constraints_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SplitOCPTest : public ::testing::Test {
 protected:
@@ -338,7 +338,7 @@ TEST_F(SplitOCPTest, floatingBase) {
   test_evalOCP(robot, contact_status, true);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

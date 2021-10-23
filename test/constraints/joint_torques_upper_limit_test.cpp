@@ -3,17 +3,17 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/constraints/joint_torques_upper_limit.hpp"
-#include "idocp/constraints/pdipm.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/constraints/joint_torques_upper_limit.hpp"
+#include "roboc/constraints/pdipm.hpp"
 
 #include "robot_factory.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class JointTorquesUpperLimitTest : public ::testing::Test {
 protected:
@@ -167,7 +167,7 @@ TEST_F(JointTorquesUpperLimitTest, floatingBase) {
   testExpandSlackAndDual(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -1,13 +1,13 @@
-#include "idocp/utils/derivative_checker.hpp"
+#include "roboc/utils/derivative_checker.hpp"
 
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_solution.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_solution.hpp"
 
 #include <cmath>
 
 
-namespace idocp {
+namespace roboc {
 
 DerivativeChecker::DerivativeChecker(const Robot& robot, 
                                      const double finite_diff, 
@@ -487,4 +487,4 @@ bool DerivativeChecker::checkSecondOrderImpulseCostDerivatives(
   return true;
 }
 
-} // namespace idocp 
+} // namespace roboc 

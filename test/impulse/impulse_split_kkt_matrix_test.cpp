@@ -2,14 +2,14 @@
 
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/impulse/impulse_split_kkt_matrix.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/impulse/impulse_split_kkt_matrix.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ImpulseSplitKKTMatrixTest : public ::testing::Test {
 protected:
@@ -158,7 +158,7 @@ TEST_F(ImpulseSplitKKTMatrixTest, floatingBase) {
   test_isApprox(robot, impulse_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

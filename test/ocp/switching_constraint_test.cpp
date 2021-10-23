@@ -1,17 +1,17 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_switching_constraint_residual.hpp"
-#include "idocp/ocp/split_switching_constraint_jacobian.hpp"
-#include "idocp/ocp/switching_constraint.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_switching_constraint_residual.hpp"
+#include "roboc/ocp/split_switching_constraint_jacobian.hpp"
+#include "roboc/ocp/switching_constraint.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SwitchingConstraintTest : public ::testing::Test {
 protected:
@@ -137,7 +137,7 @@ TEST_F(SwitchingConstraintTest, floatingBase) {
   test_computeSwitchingConstraintResidual(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 
-#include "idocp/constraints/constraint_component_data.hpp"
+#include "roboc/constraints/constraint_component_data.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class ConstraintComponentDataTest : public ::testing::Test {
 protected:
@@ -46,7 +46,7 @@ TEST_F(ConstraintComponentDataTest, err) {
   EXPECT_DOUBLE_EQ(vio, vio_ref);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

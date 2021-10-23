@@ -3,17 +3,17 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/constraints/joint_acceleration_lower_limit.hpp"
-#include "idocp/constraints/pdipm.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/constraints/joint_acceleration_lower_limit.hpp"
+#include "roboc/constraints/pdipm.hpp"
 
 #include "robot_factory.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class JointAccelerationLowerLimitTest : public ::testing::Test {
 protected:
@@ -164,7 +164,7 @@ TEST_F(JointAccelerationLowerLimitTest, floatingBase) {
   testExpandSlackAndDual(robot, amin);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

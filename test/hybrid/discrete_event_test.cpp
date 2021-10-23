@@ -4,12 +4,12 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/hybrid/discrete_event.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/hybrid/discrete_event.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class DiscreteEventTest : public ::testing::Test {
 protected:
@@ -109,7 +109,7 @@ TEST_F(DiscreteEventTest, impulseAndLift) {
   EXPECT_EQ(discrete_event.eventType(), DiscreteEventType::Impulse);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

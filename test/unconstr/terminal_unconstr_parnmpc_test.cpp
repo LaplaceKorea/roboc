@@ -3,21 +3,21 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_solution.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/cost/cost_function.hpp"
-#include "idocp/constraints/constraints.hpp"
-#include "idocp/unconstr/terminal_unconstr_parnmpc.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_solution.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/cost/cost_function.hpp"
+#include "roboc/constraints/constraints.hpp"
+#include "roboc/unconstr/terminal_unconstr_parnmpc.hpp"
 
 #include "robot_factory.hpp"
 #include "cost_factory.hpp"
 #include "constraints_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class TerminalUnconstrParNMPCTest : public ::testing::Test {
 protected:
@@ -153,7 +153,7 @@ TEST_F(TerminalUnconstrParNMPCTest, evalOCP) {
   EXPECT_TRUE(kkt_residual.isApprox(kkt_residual_ref));
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

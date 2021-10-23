@@ -1,7 +1,7 @@
-#include "idocp/constraints/joint_velocity_upper_limit.hpp"
+#include "roboc/constraints/joint_velocity_upper_limit.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 JointVelocityUpperLimit::JointVelocityUpperLimit(
     const Robot& robot, const double barrier, 
@@ -90,4 +90,4 @@ int JointVelocityUpperLimit::dimc() const {
   return dimc_;
 }
 
-} // namespace idocp
+} // namespace roboc

@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/constraints/pdipm.hpp"
-#include "idocp/constraints/constraint_component_data.hpp"
+#include "roboc/constraints/pdipm.hpp"
+#include "roboc/constraints/constraint_component_data.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class PDIPMTest : public ::testing::Test {
 protected:
@@ -102,7 +102,7 @@ TEST_F(PDIPMTest, logBarrier) {
   EXPECT_DOUBLE_EQ(cost_ref, cost);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -4,24 +4,24 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/impulse/impulse_split_ocp.hpp"
-#include "idocp/impulse/impulse_split_solution.hpp"
-#include "idocp/impulse/impulse_split_direction.hpp"
-#include "idocp/impulse/impulse_split_kkt_residual.hpp"
-#include "idocp/impulse/impulse_split_kkt_matrix.hpp"
-#include "idocp/impulse/impulse_dynamics.hpp"
-#include "idocp/cost/cost_function.hpp"
-#include "idocp/constraints/constraints.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/impulse/impulse_split_ocp.hpp"
+#include "roboc/impulse/impulse_split_solution.hpp"
+#include "roboc/impulse/impulse_split_direction.hpp"
+#include "roboc/impulse/impulse_split_kkt_residual.hpp"
+#include "roboc/impulse/impulse_split_kkt_matrix.hpp"
+#include "roboc/impulse/impulse_dynamics.hpp"
+#include "roboc/cost/cost_function.hpp"
+#include "roboc/constraints/constraints.hpp"
 
 #include "robot_factory.hpp"
 #include "cost_factory.hpp"
 #include "constraints_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ImpulseSplitOCPTest : public ::testing::Test {
 protected:
@@ -202,7 +202,7 @@ TEST_F(ImpulseSplitOCPTest, floatingBase) {
   test_evalOCP(robot, impulse_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -2,19 +2,19 @@
 
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/impulse/impulse_split_kkt_residual.hpp"
-#include "idocp/impulse/impulse_split_kkt_matrix.hpp"
-#include "idocp/impulse/impulse_split_solution.hpp"
-#include "idocp/impulse/impulse_split_direction.hpp"
-#include "idocp/impulse/impulse_dynamics_data.hpp"
-#include "idocp/impulse/impulse_dynamics.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/impulse/impulse_split_kkt_residual.hpp"
+#include "roboc/impulse/impulse_split_kkt_matrix.hpp"
+#include "roboc/impulse/impulse_split_solution.hpp"
+#include "roboc/impulse/impulse_split_direction.hpp"
+#include "roboc/impulse/impulse_dynamics_data.hpp"
+#include "roboc/impulse/impulse_dynamics.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ImpulseDynamicsTest : public ::testing::Test {
 protected:
@@ -170,7 +170,7 @@ TEST_F(ImpulseDynamicsTest, floatingBase) {
   test_condense(robot, impulse_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

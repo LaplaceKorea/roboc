@@ -3,10 +3,10 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/line_search/line_search_filter.hpp"
+#include "roboc/line_search/line_search_filter.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class LineSearchFilterTest : public ::testing::Test {
 protected:
@@ -38,7 +38,7 @@ TEST_F(LineSearchFilterTest, test) {
   EXPECT_TRUE(filter.isEmpty());
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

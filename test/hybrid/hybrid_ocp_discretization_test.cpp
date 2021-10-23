@@ -4,14 +4,14 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/hybrid/contact_sequence.hpp"
-#include "idocp/hybrid/hybrid_ocp_discretization.hpp"
-#include "idocp/robot/robot.hpp"
+#include "roboc/hybrid/contact_sequence.hpp"
+#include "roboc/hybrid/hybrid_ocp_discretization.hpp"
+#include "roboc/robot/robot.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class HybridOCPDiscretizationTest : public ::testing::Test {
 protected:
@@ -248,7 +248,7 @@ TEST_F(HybridOCPDiscretizationTest, floatingBase) {
   test_discretizeOCPOnGrid(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

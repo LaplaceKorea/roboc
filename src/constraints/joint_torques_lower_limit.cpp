@@ -1,7 +1,7 @@
-#include "idocp/constraints/joint_torques_lower_limit.hpp"
+#include "roboc/constraints/joint_torques_lower_limit.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 JointTorquesLowerLimit::JointTorquesLowerLimit(
     const Robot& robot, const double barrier, 
@@ -91,4 +91,4 @@ int JointTorquesLowerLimit::dimc() const {
   return dimc_;
 }
 
-} // namespace idocp
+} // namespace roboc

@@ -1,10 +1,10 @@
-#include "idocp/constraints/impulse_friction_cone.hpp"
+#include "roboc/constraints/impulse_friction_cone.hpp"
 
 #include <stdexcept>
 #include <iostream>
 
 
-namespace idocp {
+namespace roboc {
 
 ImpulseFrictionCone::ImpulseFrictionCone(const Robot& robot, const double mu,
                                          const double barrier,
@@ -256,4 +256,4 @@ int ImpulseFrictionCone::dimc() const {
   return dimc_;
 }
 
-} // namespace idocp
+} // namespace roboc

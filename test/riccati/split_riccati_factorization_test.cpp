@@ -1,13 +1,13 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/riccati/split_riccati_factorization.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/riccati/split_riccati_factorization.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class RiccatiFactorizationTest : public ::testing::Test {
 protected:
@@ -57,7 +57,7 @@ TEST_F(RiccatiFactorizationTest, floating_base) {
   test(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

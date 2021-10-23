@@ -3,11 +3,11 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/cost/periodic_com_ref.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/cost/periodic_com_ref.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class PeriodicCoMRefTest : public ::testing::Test {
 protected:
@@ -86,7 +86,7 @@ TEST_F(PeriodicCoMRefTest, first_mode_half_false) {
   }
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -1,7 +1,7 @@
-#include "idocp/robot/contact_status.hpp"
+#include "roboc/robot/contact_status.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 void ContactStatus::disp(std::ostream& os) const {
   os << "contact status:" << std::endl;
@@ -30,4 +30,4 @@ std::ostream& operator<<(std::ostream& os,
   return os;
 }
 
-} // namespace idocp 
+} // namespace roboc 

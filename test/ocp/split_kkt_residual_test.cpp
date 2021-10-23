@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SplitKKTResidualTest : public ::testing::Test {
 protected:
@@ -143,7 +143,7 @@ TEST_F(SplitKKTResidualTest, floatingBase) {
   test_isApprox(robot, contact_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

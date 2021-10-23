@@ -1,11 +1,11 @@
-#include "idocp/line_search/line_search_filter.hpp"
+#include "roboc/line_search/line_search_filter.hpp"
 
 #include <cassert>
 #include <stdexcept>
 #include <iostream>
 
 
-namespace idocp {
+namespace roboc {
 
 LineSearchFilter::LineSearchFilter(const double cost_reduction_rate, 
                                    const double constraints_reduction_rate) 
@@ -81,4 +81,4 @@ bool LineSearchFilter::isEmpty() const {
   }
 }
 
-} // namespace idocp
+} // namespace roboc

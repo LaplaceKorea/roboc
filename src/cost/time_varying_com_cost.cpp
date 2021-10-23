@@ -1,7 +1,7 @@
-#include "idocp/cost/time_varying_com_cost.hpp"
+#include "roboc/cost/time_varying_com_cost.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 TimeVaryingCoMCost::TimeVaryingCoMCost(
     const Robot& robot, 
@@ -168,4 +168,4 @@ void TimeVaryingCoMCost::computeImpulseCostHessian(
   }
 }
 
-} // namespace idocp
+} // namespace roboc

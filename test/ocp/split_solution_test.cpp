@@ -2,15 +2,15 @@
 
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/ocp/split_solution.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/ocp/split_solution.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SplitSolutionTest : public ::testing::Test {
 protected:
@@ -322,7 +322,7 @@ TEST_F(SplitSolutionTest, floatingBase) {
   test(robot, contact_status, impulse_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

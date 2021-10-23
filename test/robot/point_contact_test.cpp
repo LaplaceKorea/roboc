@@ -15,10 +15,10 @@
 #include "pinocchio/algorithm/kinematics-derivatives.hpp"
 #include "pinocchio/algorithm/frames-derivatives.hpp"
 
-#include "idocp/robot/point_contact.hpp"
+#include "roboc/robot/point_contact.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class PointContactTest : public ::testing::Test {
 protected:
@@ -334,7 +334,7 @@ TEST_F(PointContactTest, test) {
   }
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

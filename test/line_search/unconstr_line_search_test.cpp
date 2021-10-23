@@ -4,12 +4,12 @@
 
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/utils/aligned_vector.hpp"
-#include "idocp/unconstr/unconstr_ocp.hpp"
-#include "idocp/unconstr/unconstr_parnmpc.hpp"
-#include "idocp/line_search/line_search_filter.hpp"
-#include "idocp/line_search/unconstr_line_search.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/utils/aligned_vector.hpp"
+#include "roboc/unconstr/unconstr_ocp.hpp"
+#include "roboc/unconstr/unconstr_parnmpc.hpp"
+#include "roboc/line_search/line_search_filter.hpp"
+#include "roboc/line_search/unconstr_line_search.hpp"
 
 #include "robot_factory.hpp"
 #include "cost_factory.hpp"
@@ -18,7 +18,7 @@
 #include "direction_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class UnconstrLineSearchTest : public ::testing::Test {
 protected:
@@ -94,7 +94,7 @@ TEST_F(UnconstrLineSearchTest, UnconstrParNMPC) {
                    min_step_size);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

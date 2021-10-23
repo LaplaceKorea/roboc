@@ -1,10 +1,10 @@
-#include "idocp/solver/ocp_solver.hpp"
+#include "roboc/solver/ocp_solver.hpp"
 
 #include <stdexcept>
 #include <cassert>
 
 
-namespace idocp {
+namespace roboc {
 
 OCPSolver::OCPSolver(const Robot& robot, 
                      const std::shared_ptr<CostFunction>& cost, 
@@ -411,4 +411,4 @@ std::ostream& operator<<(std::ostream& os, const OCPSolver& ocp_solver) {
   return os;
 }
 
-} // namespace idocp
+} // namespace roboc

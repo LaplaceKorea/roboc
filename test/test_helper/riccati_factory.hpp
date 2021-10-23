@@ -1,16 +1,16 @@
-#ifndef IDOCP_TEST_RICCATI_FACTORY_HPP_
-#define IDOCP_TEST_RICCATI_FACTORY_HPP_
+#ifndef ROBOC_TEST_RICCATI_FACTORY_HPP_
+#define ROBOC_TEST_RICCATI_FACTORY_HPP_
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/riccati/split_riccati_factorization.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/riccati/split_riccati_factorization.hpp"
 
 
-namespace idocp {
+namespace roboc {
 namespace testhelper {
 
 SplitRiccatiFactorization CreateSplitRiccatiFactorization(const Robot& robot);
 
 } // namespace testhelper
-} // namespace idocp
+} // namespace roboc
 
-#endif // IDOCP_TEST_RICCATI_FACTORY_HPP_ 
+#endif // ROBOC_TEST_RICCATI_FACTORY_HPP_ 

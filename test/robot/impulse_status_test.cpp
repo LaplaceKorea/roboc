@@ -2,11 +2,11 @@
 
 #include <gtest/gtest.h>
 
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/robot/impulse_status.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/robot/impulse_status.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ImpulseStatusTest : public ::testing::Test {
 protected:
@@ -170,7 +170,7 @@ TEST_F(ImpulseStatusTest, deactivateAll) {
   }
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

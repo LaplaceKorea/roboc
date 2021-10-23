@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/ocp/contact_dynamics_data.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/ocp/contact_dynamics_data.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ContactDynamicsDataTest : public ::testing::Test {
 protected:
@@ -137,7 +137,7 @@ TEST_F(ContactDynamicsDataTest, floatingBase) {
   testSize(robot, contact_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

@@ -2,10 +2,10 @@
 
 #include <gtest/gtest.h>
 
-#include "idocp/robot/contact_status.hpp"
+#include "roboc/robot/contact_status.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ContactStatusTest : public ::testing::Test {
 protected:
@@ -131,7 +131,7 @@ TEST_F(ContactStatusTest, deactivateAll) {
   }
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

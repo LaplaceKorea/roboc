@@ -1,7 +1,7 @@
-#include "idocp/constraints/joint_position_upper_limit.hpp"
+#include "roboc/constraints/joint_position_upper_limit.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 JointPositionUpperLimit::JointPositionUpperLimit(
     const Robot& robot, const double barrier, 
@@ -90,4 +90,4 @@ int JointPositionUpperLimit::dimc() const {
   return dimc_;
 }
 
-} // namespace idocp
+} // namespace roboc

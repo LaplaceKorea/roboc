@@ -1,9 +1,9 @@
 #include "contact_sequence_factory.hpp"
 
-#include "idocp/hybrid/discrete_event.hpp"
+#include "roboc/hybrid/discrete_event.hpp"
 
 
-namespace idocp {
+namespace roboc {
 namespace testhelper {
 
 ContactSequence CreateContactSequence(const Robot& robot, const int N, 
@@ -45,4 +45,4 @@ ContactSequence CreateContactSequence(const Robot& robot, const int N,
 }
   
 } // namespace testhelper
-} // namespace idocp
+} // namespace roboc

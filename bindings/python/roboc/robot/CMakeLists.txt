@@ -1,0 +1,4 @@
+pybind11_add_roboc_module(contact_status)
+pybind11_add_roboc_module(robot)
+
+install_roboc_pybind_module(robot)

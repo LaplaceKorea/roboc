@@ -1,15 +1,15 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/ocp/split_direction.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/ocp/split_direction.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SplitDirectionTest : public ::testing::Test {
 protected:
@@ -241,7 +241,7 @@ TEST_F(SplitDirectionTest, floatingBase) {
   test_isApprox(robot, contact_status, impulse_status);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

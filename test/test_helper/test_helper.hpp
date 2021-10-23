@@ -1,12 +1,12 @@
-#ifndef IDOCP_TEST_HELPER_HPP_
-#define IDOCP_TEST_HELPER_HPP_
+#ifndef ROBOC_TEST_HELPER_HPP_
+#define ROBOC_TEST_HELPER_HPP_
 
 #include "Eigen/Core"
 
-#include "idocp/hybrid/hybrid_container.hpp"
+#include "roboc/hybrid/hybrid_container.hpp"
 
 
-namespace idocp {
+namespace roboc {
 namespace testhelper {
 
 template <typename Type, typename ImpulseType, typename SwitchingType>
@@ -70,6 +70,6 @@ bool HasNaN(const hybrid_container<Type, ImpulseType, SwitchingType>& obj) {
 }
 
 } // namespace testhelper
-} // namespace idocp
+} // namespace roboc
 
-#endif // IDOCP_TEST_HELPER_HPP_
+#endif // ROBOC_TEST_HELPER_HPP_

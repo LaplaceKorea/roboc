@@ -1,0 +1,3 @@
+pybind11_add_roboc_module(split_solution)
+
+install_roboc_pybind_module(ocp)

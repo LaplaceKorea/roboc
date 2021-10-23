@@ -3,15 +3,15 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/hybrid/contact_sequence.hpp"
-#include "idocp/hybrid/switching_time_cost_function.hpp"
-#include "idocp/hybrid/periodic_switching_time_cost.hpp"
+#include "roboc/hybrid/contact_sequence.hpp"
+#include "roboc/hybrid/switching_time_cost_function.hpp"
+#include "roboc/hybrid/periodic_switching_time_cost.hpp"
 
 #include "robot_factory.hpp"
 #include "contact_sequence_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SwitchingTimeCostFunctionTest : public ::testing::Test {
 protected:
@@ -59,7 +59,7 @@ TEST_F(SwitchingTimeCostFunctionTest, test) {
   EXPECT_DOUBLE_EQ(cost_value2, cost_value3);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

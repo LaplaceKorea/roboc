@@ -4,16 +4,16 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/contact_status.hpp"
-#include "idocp/robot/impulse_status.hpp"
-#include "idocp/hybrid/discrete_event.hpp"
-#include "idocp/hybrid/contact_sequence.hpp"
-#include "idocp/robot/robot.hpp"
+#include "roboc/robot/contact_status.hpp"
+#include "roboc/robot/impulse_status.hpp"
+#include "roboc/hybrid/discrete_event.hpp"
+#include "roboc/hybrid/contact_sequence.hpp"
+#include "roboc/robot/robot.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class ContactSequenceTest : public ::testing::Test {
 protected:
@@ -329,7 +329,7 @@ TEST_F(ContactSequenceTest, floatingBase) {
   test_setContactPoints(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

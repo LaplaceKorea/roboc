@@ -1,7 +1,7 @@
-#include "idocp/ocp/direction.hpp"
+#include "roboc/ocp/direction.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 std::ostream& operator<<(std::ostream& os, const Direction& d) {
   os << "direction:" << std::endl;
@@ -9,4 +9,4 @@ std::ostream& operator<<(std::ostream& os, const Direction& d) {
   return os;
 }
 
-} // namespace idocp 
+} // namespace roboc 

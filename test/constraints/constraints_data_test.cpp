@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 
-#include "idocp/constraints/constraints_data.hpp"
+#include "roboc/constraints/constraints_data.hpp"
 
-namespace idocp {
+namespace roboc {
 
 class ConstraintsDataTest : public ::testing::Test {
 protected:
@@ -83,7 +83,7 @@ TEST_F(ConstraintsDataTest, timestepminus1) {
   EXPECT_TRUE(data.impulse_level_data.empty());
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

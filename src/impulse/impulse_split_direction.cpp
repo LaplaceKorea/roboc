@@ -1,7 +1,7 @@
-#include "idocp/impulse/impulse_split_direction.hpp"
+#include "roboc/impulse/impulse_split_direction.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 void ImpulseSplitDirection::disp(std::ostream& os) const {
   os << "impulse split diretion:" << std::endl;
@@ -25,4 +25,4 @@ std::ostream& operator<<(std::ostream& os, const ImpulseSplitDirection& d) {
   return os;
 }
 
-} // namespace idocp 
+} // namespace roboc 

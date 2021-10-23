@@ -3,10 +3,10 @@
 #include <gtest/gtest.h>
 #include "Eigen/LU"
 
-#include "idocp/robot/lie_derivative_inverter.hpp"
+#include "roboc/robot/lie_derivative_inverter.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class LieDerivativeInverterTest : public ::testing::Test {
 protected:
@@ -30,7 +30,7 @@ TEST_F(LieDerivativeInverterTest, test) {
   EXPECT_TRUE(inv.isApprox(inv_ref));
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

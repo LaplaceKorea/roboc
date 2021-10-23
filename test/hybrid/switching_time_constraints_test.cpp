@@ -3,14 +3,14 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/hybrid/contact_sequence.hpp"
-#include "idocp/hybrid/switching_time_constraints.hpp"
+#include "roboc/hybrid/contact_sequence.hpp"
+#include "roboc/hybrid/switching_time_constraints.hpp"
 
 #include "robot_factory.hpp"
 #include "contact_sequence_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class SwitchingTimeConstraintsTest : public ::testing::Test {
 protected:
@@ -67,7 +67,7 @@ TEST_F(SwitchingTimeConstraintsTest, test) {
   constraints.updateDual(dual_step_size);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

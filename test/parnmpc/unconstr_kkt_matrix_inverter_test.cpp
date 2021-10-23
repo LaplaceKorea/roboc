@@ -1,13 +1,13 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/parnmpc/unconstr_kkt_matrix_inverter.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/parnmpc/unconstr_kkt_matrix_inverter.hpp"
 
 #include "robot_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class UnconstrKKTMatrixInverterTest : public ::testing::Test {
 protected:
@@ -47,7 +47,7 @@ TEST_F(UnconstrKKTMatrixInverterTest, test) {
   EXPECT_TRUE((KKT_mat_inv*KKT_mat_ref).isIdentity());
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {

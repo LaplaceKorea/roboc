@@ -1,12 +1,12 @@
-#ifndef IDOCP_TEST_HELPER_SOLUTION_FACTORY_HPP_
-#define IDOCP_TEST_HELPER_SOLUTION_FACTORY_HPP_
+#ifndef ROBOC_TEST_HELPER_SOLUTION_FACTORY_HPP_
+#define ROBOC_TEST_HELPER_SOLUTION_FACTORY_HPP_
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/hybrid/contact_sequence.hpp"
-#include "idocp/ocp/solution.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/hybrid/contact_sequence.hpp"
+#include "roboc/ocp/solution.hpp"
 
 
-namespace idocp {
+namespace roboc {
 namespace testhelper {
 
 Solution CreateSolution(const Robot& robot, const int N, 
@@ -16,6 +16,6 @@ Solution CreateSolution(const Robot& robot, const ContactSequence& contact_seque
                         const double T, const int N, const int max_num_impulse, const double t);
 
 } // namespace testhelper
-} // namespace idocp
+} // namespace roboc
 
-#endif // IDOCP_TEST_HELPER_SOLUTION_FACTORY_HPP_ 
+#endif // ROBOC_TEST_HELPER_SOLUTION_FACTORY_HPP_ 

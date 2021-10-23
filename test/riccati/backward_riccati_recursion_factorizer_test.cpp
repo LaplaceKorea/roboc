@@ -1,20 +1,20 @@
 #include <gtest/gtest.h>
 #include "Eigen/Core"
 
-#include "idocp/robot/robot.hpp"
-#include "idocp/ocp/split_direction.hpp"
-#include "idocp/ocp/split_kkt_matrix.hpp"
-#include "idocp/ocp/split_kkt_residual.hpp"
-#include "idocp/riccati/split_riccati_factorization.hpp"
-#include "idocp/riccati/lqr_policy.hpp"
-#include "idocp/riccati/backward_riccati_recursion_factorizer.hpp"
+#include "roboc/robot/robot.hpp"
+#include "roboc/ocp/split_direction.hpp"
+#include "roboc/ocp/split_kkt_matrix.hpp"
+#include "roboc/ocp/split_kkt_residual.hpp"
+#include "roboc/riccati/split_riccati_factorization.hpp"
+#include "roboc/riccati/lqr_policy.hpp"
+#include "roboc/riccati/backward_riccati_recursion_factorizer.hpp"
 
 #include "robot_factory.hpp"
 #include "kkt_factory.hpp"
 #include "riccati_factory.hpp"
 
 
-namespace idocp {
+namespace roboc {
 
 class BackwardRiccatiRecursionFactorizerTest : public ::testing::Test {
 protected:
@@ -110,7 +110,7 @@ TEST_F(BackwardRiccatiRecursionFactorizerTest, floating_base) {
   test_impulse(robot);
 }
 
-} // namespace idocp
+} // namespace roboc
 
 
 int main(int argc, char** argv) {
